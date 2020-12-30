@@ -1,0 +1,18 @@
+# data urls
+data:[a-zA-Z=;,/0-9+-]+
+# GitHub SHAs
+(?:\[[0-9a-f]+\]\(https:/|)/github\.com/[^/]+/[^/]+/[^/]+/[0-9a-f]+\b
+\bgithub\.com/[^/]+/[^/]+[@#][0-9a-f]+\b
+# gist github
+/gist\.github\.com/[^/]+/[0-9a-f]+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#|\%23)[0-9a-fA-FgGrR_]{2,}[uU]?[lL]{0,2}\b
+\@"[0-9a-fA-F]{6}"
+# uuid:
+[{"'][0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}['"}]
+
+# xib IDs
+(?:id|target|destination|Item)="[0-9a-zA-Z]{3}-[0-9a-zA-Z]{2}-[0-9a-zA-Z]{3}"
+
+# Apple API Botch
+customObjectInstantitationMethod
