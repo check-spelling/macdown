@@ -21,3 +21,6 @@ jobs:
       with:
         experimental_apply_changes_via_bot: 1
         debug: 1
+        check_extra_dictionaries:
+          cspell:bash/bash-words.txt
+          cspell:css/css.txt
