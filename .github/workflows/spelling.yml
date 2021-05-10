@@ -24,3 +24,5 @@ jobs:
         check_extra_dictionaries:
           cspell:bash/bash-words.txt
           cspell:css/css.txt
+        extra_dictionaries:
+          cspell:css/css.txt
